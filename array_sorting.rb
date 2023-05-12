@@ -1,3 +1,4 @@
+# sorting array in ascending order
 module Sor
   def initialize(s)
     @s = s
@@ -14,4 +15,22 @@ class Sorting_m
 end
 
 obj = Sorting_m.new([3,22,7,9,5,6,10])
-obj.sorting_1
+
+# adding two given number
+module Adding
+  def initialize(a,b)
+    @a  = a
+    @b = b   
+  end
+
+  def adding
+    s = @a + @b   
+    p "the addition of #{@a} and #{@b} is : #{s} "
+  end
+end
+
+class Add
+  include Adding
+end
+obj = Add.new(3,5)
+obj.adding
