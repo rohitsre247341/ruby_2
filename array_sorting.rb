@@ -33,4 +33,22 @@ class Add
   include Adding
 end
 obj = Add.new(3,5)
-obj.adding
+
+module Sqr 
+
+  def initialize(s)
+    @s = s  
+  end
+
+  def square_1
+
+    d = Math.sqrt(@s)
+    p "the square root of #{@s} is : #{d} "
+  end
+
+end
+class Sq
+  include Sqr
+end
+obj = Sq.new(54)
+obj.square_1
