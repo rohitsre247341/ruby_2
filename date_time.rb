@@ -1,3 +1,5 @@
+# getting name of day of week from a given date
+
 module Time_1
   def time_2
     require 'date'
@@ -14,3 +16,20 @@ class Shown
 end
 obj = Shown.new
 obj.time_2
+
+# for getting number of seconds from epoch
+class Formating_1
+
+  def rohit
+     require 'time'
+    p "please enter your time and date in the given format YYYY-MM-DD HH:MM:SS "
+    r = gets.chomp 
+    input = Time.parse(r)
+    q = input.to_i
+    p "number of seconds from epoch is #{q} "
+  end
+
+end
+
+obj = Formating_1.new
+obj.rohit
